@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #04152d;
+    animation: fadeInAnimation ease 2s;
+}
+
+h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+p{
+    color: #fff;
+}
+
+.contactbutton{
+    color: #1738e0;
+    font-size: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 2rem 3rem;
+}
+
+.nav{
+    width: 100%;
+    transition: all 400ms ease;
+    background: inherit;
+    position: absolute;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.navbar .logo a:hover{
+    color: #fff;
+}
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar .nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navbar .nav-links a:hover{
+    color: #fff;
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.hero .container{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero .container .left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero .container .left h1{
+    font-size: 45px;
+    color: #fff;
+}
+
+.hero .container .left p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.hero .container .left button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #1738e0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero .container .left button:hover, .contact .container form button:hover{
+    background-color: #102fcd;
+    /* box-shadow: 0 0 5px white; */
+}
+
+.hero .container .right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.hero .container .right img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.skills{
+    /* background-color: #031124; */
+    background-color: #04142b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.skills h2{
+    margin: 3rem 0;
+}
+
+.skills .container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    max-width: 1400px;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+}
+
+.skills .container .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.skills .container .item:nth-child(2){
+    transition-delay: 400ms;
+}
+.skills .container .item:nth-child(3){
+    transition-delay: 600ms;
+}
+.skills .container .item:nth-child(4){
+    transition-delay: 800ms;
+}
+
+.skills .container .item i{
+    font-size: 65px;
+}
+
+.skills .container .item p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    background-color: #04152d;
+}
+
+.projects h2{
+    margin: 3rem 0;
+}
+
+.projects .container{
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.projects .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+    border-radius: 20px;
+    padding-bottom: 3rem;
+    background-color: #020e1e;
+    overflow: hidden;
+}
+
+.projects .container .item .image{
+    width: 100%;
+    height: 200px;
+}
+
+.projects .container .item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 20px 20px 0 0; */
+}
+
+
+.projects .container .item .text{
+    padding: 0 1rem;
+}
+.projects .container .item .text h3{
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.projects .container .item .text p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact{
+    padding: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    background-color: #04142b;
+}
+
+.contact .container{
+    width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .container h2{
+    margin-top: 3rem;
+}
+
+.contact .container p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.contact .container form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact .container form input{
+    background-color: #020e1e;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+.contact .container form textarea{
+    background-color: #020e1e;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact .container form button{
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #1738e0;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.footer{
+    padding: 7rem 0;
+    background-color: #020e1e;
+}
+
+.footer .socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer .socials a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .socials a i{
+    font-size: 30px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
