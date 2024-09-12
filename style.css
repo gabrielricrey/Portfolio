@@ -26,6 +26,10 @@ p{
     color: #fff;
 }
 
+a{
+    transition: all 0.3s ease;
+}
+
 .contactbutton{
     color: #1738e0;
     font-size: 50px;
@@ -46,7 +50,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -58,7 +62,7 @@ p{
 }
 
 .navbar .logo a:hover{
-    color: #fff;
+    color: #1738e0;
 }
 
 .navbar .nav-links{
@@ -75,7 +79,7 @@ p{
 }
 
 .navbar .nav-links a:hover{
-    color: #fff;
+    color: #1738e0;
 }
 
 .hero{
@@ -93,6 +97,7 @@ p{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0 2rem;
 }
 
 .hero .container .left{
@@ -144,8 +149,7 @@ p{
 }
 
 .skills{
-    /* background-color: #031124; */
-    background-color: #04142b;
+    background-color: #031227;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -273,8 +277,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5rem;
-    background-color: #04142b;
+    background-color: #031227;
 }
 
 .contact .container{
