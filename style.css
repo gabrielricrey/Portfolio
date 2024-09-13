@@ -29,6 +29,7 @@ h2{
 
 p{
     color: #fff;
+    font-size: 18px;
 }
 
 a{
@@ -88,6 +89,25 @@ a{
     text-transform: uppercase;
 }
 
+.navbar .menubtn{
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    margin-right: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .menubtn i{
+    color: #fff;
+    font-size: 35px;
+}
+
+.navbar .menubtn i:hover{
+    color: #102fcd;
+}
+
 /* .navbar .nav-links a:hover{
     color: #1738e0;
 } */
@@ -111,7 +131,7 @@ a{
 }
 
 .hero .container .left{
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +140,6 @@ a{
 }
 
 .hero .container .left p{
-    font-size: 18px;
     text-align: center;
     line-height: 2rem;
 }
@@ -211,7 +230,6 @@ a{
 }
 
 .skills .container .item p{
-    font-size: 18px;
     color: #fff;
 }
 
@@ -240,32 +258,32 @@ a{
 }
 
 .projects .container .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 30%;
-    gap: 1rem;
+    height: 350px;
     border-radius: 20px;
-    padding-bottom: 3rem;
     background-color: #020e1e;
     overflow: hidden;
+    position: relative;
 }
 
-.projects .container .item .image{
-    width: 100%;
-    height: 200px;
+.projects .container .item:hover{
+    box-shadow: 0 0 5px rgb(200, 200, 200);
 }
 
-.projects .container .item .image img{
+
+.projects .container .item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 20px 20px 0 0; */
 }
 
 
 .projects .container .item .text{
+    position: absolute;
     padding: 0 1rem;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem
 }
 .projects .container .item .text h3{
     text-align: left;
@@ -276,7 +294,6 @@ a{
 
 .projects .container .item .text p{
     color: #fff;
-    font-size: 18px;
 }
 
 .contact{
@@ -302,7 +319,6 @@ a{
 }
 
 .contact .container p{
-    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -388,5 +404,29 @@ a{
 
     100%{
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .navbar .nav-links{
+        flex-direction: column;
+        position: absolute;
+        right: -250px;
+        top: 150px;
+        width: 250px;
+        background-color: #04152d;
+        padding: 5rem 2rem;
+    }
+
+    .navbar .nav-links.on{
+        right: 0;
+    }
+    .navbar .menubtn{
+        display: block;
+    }
+
+    p{
+        font-size: 16px;
     }
 }

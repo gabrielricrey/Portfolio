@@ -10,3 +10,10 @@ const observer = new IntersectionObserver((entries) =>{
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+const menuBtn = document.querySelector('.menubtn');
+const navBar = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () =>{
+    navBar.classList.toggle("on")
+})

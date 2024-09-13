@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <i class="fa-regular fa-message contactbutton"></i>
+    <!-- <i class="fa-regular fa-message contactbutton"></i> -->
+    <i class="fa-solid fa-envelope contactbutton"></i>
     <div class="nav">
         <div class="navbar">
             <div class="logo">
@@ -22,6 +23,8 @@
                 <a href="#">Projects</a>
                 <a href="#">Contact</a>
             </div>
+
+            <button class="menubtn"><i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
 
@@ -32,11 +35,13 @@
                 <p>I'm a full-stack developer with 0 years of experience with emphasis on frontend languages, libraries,
                     and frameworks. Experienced in developing applications with a day to day focus on React, testing,
                     and state management.</p>
-                <button type="button"><p>Contact me</p></button>
+                <button type="button">
+                    <p>Contact me</p>
+                </button>
             </div>
             <div class="right">
                 <img src="images/me.JPG" alt="">
-                
+
             </div>
         </div>
     </div>
@@ -63,32 +68,32 @@
     <div class="projects">
         <h2>Projects</h2>
         <div class="container">
-                <div class="item">
-                        <div class="image">
-                            <img src="images/1.jpeg" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Project 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam.</p>
-                        </div>
-                </div>
             <div class="item">
-                    <div class="image">
-                        <img src="images/2.jpeg" alt="">
-                    </div>
+                <a href="">
+                    <img src="images/1.jpeg" alt="">
                     <div class="text">
                         <h3>Project 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam.</p>
                     </div>
+                </a>
             </div>
             <div class="item">
-                    <div class="image">
-                        <img src="images/3.jpeg" alt="">
-                    </div>
+                <a href="">
+                    <img src="images/2.jpeg" alt="">
                     <div class="text">
-                        <h3>Project 1</h3>
+                        <h3>Project 2</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam.</p>
                     </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="images/3.jpeg" alt="">
+                    <div class="text">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -98,18 +103,19 @@
             <h2>Contact</h2>
             <p>Have a question or want to work together?</p>
             <form action="">
-                <input class="hidden" type="text" placeholder="Name">
-                <input class="hidden" type="text" placeholder="Enter email">
-                <textarea class="hidden" name="" id="" placeholder="Your Message" rows="5"></textarea>
+                <input class="hidden" name="name" type="text" placeholder="Name">
+                <input class="hidden" name="email" type="text" placeholder="Enter email">
+                <textarea class="hidden" name="message" id="" placeholder="Your Message" rows="5"></textarea>
                 <button type="submit">Submit</button>
-            </form>         
+            </form>
         </div>
     </div>
 
     <div class="footer">
         <div class="socials">
             <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/gabriel-reynoso-5966852b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-reynoso-5966852b4/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/gabrielricrey" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
