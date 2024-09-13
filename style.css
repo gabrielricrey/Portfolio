@@ -31,6 +31,10 @@ p{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+}
+
 .contactbutton{
     color: #1738e0;
     font-size: 40px;
