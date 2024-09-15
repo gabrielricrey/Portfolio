@@ -14,6 +14,7 @@ html{
 body{
     background-color: #04152d;
     animation: fadeInAnimation ease 2s;
+    width: 100%;
 }
 
 h1{
@@ -62,7 +63,7 @@ a{
     justify-content: space-between;
     align-items: center;
     max-width: 1400px;
-    width: 100%;
+    width: 100%
 }
 
 .navbar .logo a{
@@ -106,6 +107,23 @@ a{
 
 .navbar .menubtn i:hover{
     color: #102fcd;
+}
+
+.navbar .sidenav{
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    background-color: green;
+    right: 0px;
+}
+
+.test{
+    width: 400px;
+    height: 600px;
+    background-color: pink;
+    position: absolute;
+    right: -400px;
+    display: none;
 }
 
 /* .navbar .nav-links a:hover{
@@ -409,6 +427,22 @@ a{
 
 @media screen and (max-width: 1024px){
 
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .nav{
+        padding: 0 3rem;
+        height: 100px;
+    }
+    .navbar .logo a{
+        font-size: 25px;
+    }
+
     .navbar .nav-links{
         flex-direction: column;
         position: absolute;
@@ -420,13 +454,19 @@ a{
     }
 
     .navbar .nav-links.on{
-        right: 0;
+        right: 0px;
     }
     .navbar .menubtn{
         display: block;
     }
 
-    p{
-        font-size: 16px;
+    .projects .container {
+        padding: 3rem 0;
     }
+
+    .contact .container form {
+        width: 80%;
+    }
+
+  
 }
