@@ -194,7 +194,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
     max-width: 1400px;
     border-radius: 20px;
     margin-bottom: 5rem;
@@ -208,7 +207,7 @@ a{
     gap: 10px;
     cursor: pointer;
     padding: 1rem;
-    width: 200px;
+    width: 30%;
     height: 200px;
     border-radius: 50%;
 
