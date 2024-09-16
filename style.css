@@ -65,6 +65,7 @@ a{
     width: 100%;
     position: relative;
     padding: 2rem;
+    height: 5rem;
 }
 
 .navbar .logo a{
@@ -112,19 +113,16 @@ a{
 
 .hero{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     height: 100vh;
+    display: flex;
 }
 
 .hero .container{
     max-width: 1400px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 0 3rem;
 }
 
@@ -422,6 +420,7 @@ a{
         height: 100vh;
         background-color: #04152d;
         padding: 5rem 2rem;
+        transition: all 0.6s ease;
     }
 
     .navbar .nav-links.on{
@@ -440,6 +439,10 @@ a{
         width: 80%;
     }
 
+    .hero{
+        align-items: center;
+    }
+
     .hero .container{
         flex-direction: column-reverse;
         gap: 1rem;
@@ -447,6 +450,7 @@ a{
     }
 
     .hero .container .right{
+        margin-top: 5rem;
         width: 100%;
     }
 
@@ -455,7 +459,7 @@ a{
     }
 
     .hero .container .left h1{
-        margin: 1rem 0;
+        margin-top: 1rem;
     }
 
     .hero .container .left button{
@@ -481,7 +485,7 @@ a{
     }
 
     .projects .container{
-        padding: 0;
+        padding: 0 1rem;
         flex-direction: column;
         gap: 1rem;
     }

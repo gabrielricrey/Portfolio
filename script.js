@@ -13,17 +13,15 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const menuBtn = document.querySelector('.menubtn');
 const navBar = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.links');
 
-// navBar.style.right = "-250px";
-
-// menuBtn.addEventListener('click', () =>{
-//     if(navBar.style.right == "-250px"){
-//         navBar.style.right = "0";
-//     } else{
-//         navBar.style.right == "-250px";
-//     }
-// })
 
 menuBtn.addEventListener('click', () =>{
     navBar.classList.toggle('on');
+})
+
+links.forEach(link =>{
+    link.addEventListener('click', () =>{
+        navBar.classList.toggle('on');
+    })
 })
